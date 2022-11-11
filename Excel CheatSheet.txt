@@ -1,0 +1,166 @@
+************************************************ EXCEL CHEETSHEET *************************************************
+
+___________________________________________________________________________________________________________________
+**************************************************** Formulas *****************************************************
+___________________________________________________________________________________________________________________
+
+1. Addition of Numbers          =sum() 
+2. Average of Numbers           =cells/number of cells
+3. Xlookup                      =Xlookup(value,looking in,looking for)
+4. New Data types               =[@example].{Values to Find]
+5. IF Statement                 =if(cells>value,value,if(cells=value,""))
+6. And                          =if(and(cells>value,cells="text"),3000,"")
+7. Or                           =if(or(cells>value,cells="text"),3000,"")
+8. Not                          =if(not(cells>value,cells="text"),3000,"")
+9. IFS                          =ifs(cells=value,value,cells=value,value,cells=value,value,cells=value,value,value,"")
+10. Choose                      =choose(month(cells),1,1,1,2,2,2,3,3,3,4,4,4)
+11. Match                       =match(cells,cells:cells,value)
+12. IFError                     =iferror(match(cells,cells:cells,value),"Not Found")
+13. Index                       =index(cells:cells,cells,cells)
+14. FormulaText                 =Formulatext(cells)
+15. Unique                      =unique(cells)
+16. Counta                      =counta(unique(cells))
+17. Countif/Sumif/Averageif     =countif(cells to find,value to find)
+                                =sumif(cells to find,value to find)
+                                =averageif(cells to find,value to find)
+                                =countif(cells to find,"*value to find")
+18. Countifs/sum../avg..        =countifs(cells,value,cells,value,cells,">value")
+                                =sumifs(cells,value,cells,value,cells,">value")
+                                =averageifs(cells,value,cells,value,cells,">value")
+19. Maxifs/minifs               =maxifs(cells,cells,value,cells,value) / cells,">value")
+                                =minifs(cells,cells,value,cells,value) / cells,">value")
+20. Subtotal                    =subtotal(9,cells)
+21. Median                      =median(cells)
+22. Mode                        =mode(cells)
+23. Rank                        =rank(value in cells,cells) [1-ascen,0-decen]
+24. Rank Average                =rank.avg(value in cells,cells)
+25. Large                       =large(cells,value)
+26. CountBlank                  =countblank(cells:cells)
+27. IsNumber                    =isnumber(cell)
+28. Round/Up/Down               =round/up/down(cell*value+cell,0)
+29. MRound                      =mround(cell*value+cell,0.05)
+30. Ceiling                     =celing(cell*value+cell,0.05)
+31. Trunc/Int                   =trunc(cell*value+cell)
+                                =int(cell*value+cell)
+32. Even/Odd                    =even(cell)
+                                =odd(cell)
+33. Mod                         =mod(cell,cell)
+34. Random                      =rand()
+35. Random Between              =randbetween(50,150)
+36. Convert                     =convert(cell,"km","mi")
+37. Aggregate                   =aggregate(9,6,cells)
+38. Roman/Arabic                =roman(cell)
+                                =arabic(cell)
+39. Date                        =date(cell,cell,cell)
+40. Day/Month/Year              =day(cell)
+                                =month(cell)
+                                =year(cell)
+41. Time                        =time(cell,cell,cell)
+42. second/minute/hour          =second(cell)
+                                =minute(cell)
+                                =hour(cell)
+43. Current date                =today()
+44. Current time                =now()
+45. weekday/WEEKDAY             =weekday(cells)
+                                =if(WEEKDAY(cell)=1,cell+1,if(WEEKDAY(cell)=7,cell-1,cell))
+46. Workday                     =Workday(cell,cell,cells)
+47. Datedif                     =datedif(cell,cell,"m") [y,m,d,ym,yd]
+48. End date/End month          =edate(cell,cell)
+                                =eomonth(cell,cell)
+49. Offset                      =offset(cell,counta(cell)-1,0)
+50. Indirect                    =indirect(cell&"!cell")
+51. Find                        =find("any value",cell)
+52. Search                      =search("any value",cell)
+53. Right/Left                  =right(cell,5)
+                                =left(cell,5)
+54. Match                       =match(cell,cells,0)
+55. Trim                        =match(trim(cell),cells,0)
+                                =match(trim(cell),trim(cells),0)
+56. Concatenate                 =concatenate(cell,",",cell," ",cell)
+                                =concatenate(cell&cell&cell&cell)
+57. Upper/lower/proper          =upper(cell)
+                                =lower(cell)
+                                =proper(cell)
+58. Textjoin                    =textjoin(cell)
+59. Replace                     =replace(cell,5,1,"X")
+60. Substitute                  =substitute(cell,"-","")
+61. Text                        =text(cell,"000000")
+62. Length                      =len(cell)
+63. Rept                        =rept(cell,cell)
+64. Lambda                      =lambda(q,q^(1/3))(cell)
+65. Textsplit/before/after      =textsplit(cell,",")
+                                =textbefore(cell,"-",2)
+                                =textbefore(cell,"-",2)
+66. Cell                        =cell(cell,cell)
+67. Info                        =info(cell)
+68. IsText/Number               =istext(cell)
+                                =isnumber(cell)
+___________________________________________________________________________________________________________________
+************************************************ Function Location ************************************************
+___________________________________________________________________________________________________________________
+. Clear Format                 =home>editing>clear
+. Number Format                =home>number>format cells>number>custom
+. Alignment                    =home>format>format cells>Alignment
+. Format Painter               =home>clipboard>Format Painter
+. Find and Replace             =home>find and replace
+. Conditional Formatting       =home>conditional formatting
+. Slicers                      =insert>filters>slicers
+. Icons                        =insert>illustrations>icons
+. Pivot Table                  =insert>Pivotable
+. Formulas                     =Formulas>Autosum
+. Switch                       =Formulas>Logical>switch
+. Range Names                  =Formulas>Define Name/Name Manager
+. Mod                          =Formulas>math and trigo
+. Create from selection        =Formulas>defined Names>Create from selection
+. Concatenate                  =Formulas>Functions>concat
+. Cell fun                     =Formulas>more functions>information>cell
+. 5. Activating Filter         =Data>Filter
+. Sorting                      =Data>Sort
+. New Data types               =Data>preview data types
+. Data Validation              =Data>Data Tools>Data Validation
+. Flash Fill                   =Data>Data tools>flash fill
+. Protecting Worsheets         =Review>Protect Workbook/Sheet
+. Share and UnShare(ADD)       =Review>Unshare
+. Shape Format                 =shape format>size
+. Word Art                     =shape format>word art styles>text effect
+. forward forward img          =shape format>Arrange>bring forward
+. forward backward img         =shape format>Arrange>bring backward
+. Group imgs                   =shape format>arrange>group
+. change color of icons        =Graphics format>graphics styles>graphics fill
+
+
+___________________________________________________________________________________________________________________
+************************************************* Shortcuts Keys **************************************************
+___________________________________________________________________________________________________________________
+1. Create Table                 | Ctrl+T
+2. Print                        | Ctrl+P
+3. Addition of Numbers          | Alt+=
+4. Paste Special                | Ctrl+Alt+V
+5. Debugging                    | F9
+6. Undo                         | Ctrl+z
+7. Redo                         | Ctrl+y
+8. Cut                          | Ctrl+x
+9. Copy                         | Ctrl+c
+10. Paste                       | Ctrl+v
+11. Current Date                | Ctrl+;
+12. Current Time                | Ctrl+Shift+;
+13. Format cells                | Ctrl+1
+14. Change Format               | Ctrl+Shift+1
+15. select coloumn              | Ctrl+Shift+DownArrow
+
+___________________________________________________________________________________________________________________
+*********************************************** Some more IMP Tools ***********************************************
+___________________________________________________________________________________________________________________
+1. Hide and UnHide
+2. Freeze and UnFreeze
+3. Grouping Sheets
+4. Power Query
+5. Conditional formatting
+6. Format Slicers
+7. Install fonts
+8. Background Image
+9. Pivot Table
+10. Charts & graphics
+11. Sparkline & streamlines
+12. Edit cells 
+___________________________________________________________________________________________________________________
