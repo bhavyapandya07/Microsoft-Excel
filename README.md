@@ -30,7 +30,7 @@ If you would like to contribute to this repository, feel free to open a pull req
 
 Check out the Excel formulas and commands provided in the repository to learn more about using Excel effectively. You can also download the Microsoft Excel app or visit their website to access more resources and cheat sheets.
 
-Download link and Cheat sheet by Microsoft:
+## Download link and Cheat sheet by Microsoft:
 - https://www.microsoft.com/en-in/microsoft-365/excel
 - https://play.google.com/store/apps/details?id=com.microsoft.office.excel&hl=en_IN&gl=US
 - https://support.microsoft.com/en-us/office/keyboard-shortcuts-in-excel-1798d9d5-842a-42b8-9c99-9b7213f0040f
